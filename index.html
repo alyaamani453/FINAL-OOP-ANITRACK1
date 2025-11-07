@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AniTracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="watchlist.html">Watchlist</a></li>
+    </ul>
+  </nav>
+
+  <!-- App Title and Search Bar -->
+  <div class="header">
+    <h1>AniTracker</h1>
+    <input type="text" id="search-input" placeholder="Search for anime...">
+  </div>
+
+  <!-- Anime Results -->
+  <div id="anime-results"></div>
+
+  <!-- Footnote -->
+  <footer>
+    <p>&copy; 2025 AniTracker. All rights reserved.</p>
+  </footer>
+
+  <!-- Popup Notification -->
+  <div id="popup" class="popup">
+    <p>You successfully added to the watchlist!</p>
+  </div>
+
+  <!-- Add a section for episodes (This will be dynamically populated when an anime is added to the watchlist) -->
+  <div id="episodes-list"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
+

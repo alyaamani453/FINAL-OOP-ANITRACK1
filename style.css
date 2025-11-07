@@ -1,0 +1,215 @@
+/* General Page Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #333;
+  color: white;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Navigation Bar */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #444;
+  padding: 10px;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Header Styling */
+.header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Center the Search Bar */
+input[type="text"] {
+  padding: 10px;
+  width: 80%;
+  max-width: 600px;
+  margin: 20px 0;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Result Container Styles */
+#anime-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Anime Card Styles */
+.anime-card {
+  background-color: #444;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;  /* Limit the width of each card */
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.anime-card:hover {
+  transform: scale(1.05);  /* Slight scale effect on hover */
+}
+
+.anime-card img {
+  max-width: 200px;  /* Increase image size */
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.anime-card h3 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Summary Text (limit length) */
+.anime-card p {
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 10px;
+  height: 60px;  /* Restrict height of the summary */
+  overflow: hidden;  /* Hide overflow text */
+  text-overflow: ellipsis;  /* Add ellipsis for overflowed text */
+}
+
+/* Button Styles */
+button {
+  background-color: #2563eb;  /* Blue accent */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #10b981;  /* Green accent */
+}
+
+.add-watchlist {
+  background-color: #10b981;
+}
+
+.more-info {
+  background-color: #f5a623;  /* Yellow accent */
+}
+
+.more-info:hover {
+  background-color: #ff9d00;
+}
+
+.remove {
+  background-color: #e74c3c;  /* Red for remove */
+}
+
+.remove:hover {
+  background-color: #c0392b;
+}
+
+.mark-read {
+  background-color: #f39c12;  /* Yellow for mark read */
+}
+
+.mark-read:hover {
+  background-color: #e67e22;
+}
+
+.save-review {
+  background-color: #16a085;  /* Green for save review */
+}
+
+.save-review:hover {
+  background-color: #1abc9c;
+}
+
+/* Styling for Review Textarea */
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  height: 80px;  /* Set height */
+  resize: none;  /* Prevent resizing */
+  background-color: #444;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #555;
+}
+
+/* Review Display */
+.review-display {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Watch Status (WATCHED/READ) styling */
+.status {
+  font-weight: bold;
+  color: green;
+  margin-top: 10px;
+}
+
+/* Popup Notification Styles */
+.popup {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #10b981;  /* Green */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  display: none;  /* Hidden by default */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 1000;  /* Ensure it's above other content */
+}
+
+/* Clear All Data Button */
+#clearDataBtn {
+  background-color: #e67e22;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#clearDataBtn:hover {
+  background-color: #f39c12;
+}
